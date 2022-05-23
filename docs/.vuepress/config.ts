@@ -15,7 +15,7 @@ export default defineUserConfig({
   title: 'Maz-UI',
   description: 'Library of standalone components and tools for Vue & Nuxt (v3.x)',
   clientConfigFile: path.resolve(__dirname, 'client.ts'),
-  base: `/vuepress-test/`,
+  base: `/maz-ui-3/`,
 
   head,
 

@@ -1,27 +1,25 @@
 {
-  "name": "vuepress-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "docs",
+  "version": "3.0.0",
+  "description": "documentation of maz-ui",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "author": "",
+  "author": "LouisMazel <me@loicmazuel.com>",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.45",
     "@vuepress/plugin-register-components": "^2.0.0-beta.45",
     "@vuepress/plugin-search": "^2.0.0-beta.45",
     "chart.js": "^3.7.1",
     "chartjs-plugin-datalabels": "^2.0.0",
     "dayjs": "^1.11.2",
     "dropzone": "^5.9.3",
+    "lib": "^4.3.3",
     "libphonenumber-js": "^1.10.4",
+    "maz-ui": "file:lib",
     "vuepress": "^2.0.0-beta.45",
     "vuepress-plugin-sitemap2": "^2.0.0-beta.71"
-  },
-  "dependencies": {
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.45",
-    "maz-ui": "file:lib"
   }
 }

@@ -1,7 +1,7 @@
 import { UserConfig } from 'vuepress'
 
 const getAssetBaseUrl = (path: string): string => {
-  const base = process.env.NODE_ENV === 'production' ? 'https://louismazel.github.io/vuepress-test' : ''
+  const base = process.env.NODE_ENV === 'production' ? 'https://louismazel.github.io/maz-ui-3' : ''
   return `${base}${path}`
 }
 
