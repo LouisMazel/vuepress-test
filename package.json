@@ -16,7 +16,6 @@
     "chartjs-plugin-datalabels": "^2.0.0",
     "dayjs": "^1.11.2",
     "dropzone": "^5.9.3",
-    "lib": "^4.3.3",
     "libphonenumber-js": "^1.10.4",
     "maz-ui": "file:lib",
     "vuepress": "^2.0.0-beta.45",
