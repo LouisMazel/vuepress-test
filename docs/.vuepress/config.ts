@@ -9,17 +9,13 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 
 import { sidebar, navbar, head } from './configs'
 
-const getBaseUrl = (): SiteData['base'] => {
-  return process.env.NODE_ENV === 'production' ? `/vuepress-test/` : '/'
-}
-
 export default defineUserConfig({
   // site config
   lang: 'en-US',
   title: 'Maz-UI',
   description: 'Library of standalone components and tools for Vue & Nuxt (v3.x)',
   clientConfigFile: path.resolve(__dirname, 'client.ts'),
-  base: getBaseUrl(),
+  base: `/vuepress-test/`,
 
   head,
 
