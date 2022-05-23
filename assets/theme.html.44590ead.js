@@ -1,0 +1,1 @@
+const e={key:"v-4d76029c",path:"/guide/theme.html",title:"Theme",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"List of CSS variables",slug:"list-of-css-variables",children:[]}],git:{updatedTime:1653345285e3,contributors:[{name:"LouisMazel",email:"mazuel.loic@gmail.com",commits:1}]},filePathRelative:"guide/theme.md"};export{e as data};
