@@ -1,0 +1,12 @@
+import { type CountryCode, type Examples } from 'libphonenumber-js';
+import type { Country, Result } from '../types';
+export declare function getCountryName(code: CountryCode | string, customCountriesNameListByIsoCode?: Record<CountryCode, string>): string | undefined;
+export declare function loadPhoneNumberExamplesFile(): Promise<Examples>;
+export declare function getExamplePhoneNumber(countryCode: CountryCode): import("libphonenumber-js").PhoneNumber | undefined;
+export declare function sanitizePhoneNumber(input?: string): string | undefined;
+export declare function getCountriesList(customCountriesNameListByIsoCode?: Record<CountryCode, string>): Country[] | undefined;
+export declare function browserLocale(): string | undefined;
+export declare function isCountryAvailable(locale: string): boolean;
+export declare const getResultsFromPhoneNumber: (countryCode?: CountryCode | undefined, phoneNumber?: string | undefined) => Result;
+export declare function getAsYouTypeFormat(countryCode: CountryCode, phoneNumber?: string): string | undefined;
+export declare function fetchCountryCode(): Promise<string | undefined>;
