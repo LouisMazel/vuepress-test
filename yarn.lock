@@ -1307,7 +1307,7 @@
   "resolved" "https://registry.npmjs.org/@types/ms/-/ms-0.7.31.tgz"
   "version" "0.7.31"
 
-"@types/node@*", "@types/node@^17.0.34":
+"@types/node@*", "@types/node@^17.0.34", "@types/node@^17.0.5":
   "integrity" "sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.35.tgz"
   "version" "17.0.35"
@@ -1336,6 +1336,13 @@
   dependencies:
     "@types/node" "*"
     "rollup" "^0.63.4"
+
+"@types/sax@^1.2.1":
+  "integrity" "sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw=="
+  "resolved" "https://registry.npmjs.org/@types/sax/-/sax-1.2.4.tgz"
+  "version" "1.2.4"
+  dependencies:
+    "@types/node" "*"
 
 "@types/sizzle@*":
   "integrity" "sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ=="
@@ -1672,6 +1679,15 @@
     "@vuepress/core" "2.0.0-beta.45"
     "execa" "^5.1.1"
 
+"@vuepress/plugin-google-analytics@^2.0.0-beta.45":
+  "integrity" "sha512-5PuJkjm1y9Q0o5fUSxOHcS418qYq9sXEGHQsV5wKBXuNT7q0SGiyQDf76YlL2hR7KVRKyy0bGrxc/M1h034KRA=="
+  "resolved" "https://registry.npmjs.org/@vuepress/plugin-google-analytics/-/plugin-google-analytics-2.0.0-beta.45.tgz"
+  "version" "2.0.0-beta.45"
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.45"
+    "@vuepress/core" "2.0.0-beta.45"
+    "@vuepress/utils" "2.0.0-beta.45"
+
 "@vuepress/plugin-medium-zoom@2.0.0-beta.45":
   "integrity" "sha512-ksXfYzjcyidk2pGtSPZRRDaQpdecTxAlMxx7TFQVy49zoXrvj9ScXpIeqehuhU4NXCMrWsiXIJ6AiNJjerIWZg=="
   "resolved" "https://registry.npmjs.org/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-beta.45.tgz"
@@ -1997,6 +2013,11 @@
   "integrity" "sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA=="
   "resolved" "https://registry.npmjs.org/arg/-/arg-4.1.3.tgz"
   "version" "4.1.3"
+
+"arg@^5.0.0":
+  "integrity" "sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA=="
+  "resolved" "https://registry.npmjs.org/arg/-/arg-5.0.1.tgz"
+  "version" "5.0.1"
 
 "arg@^5.0.1":
   "integrity" "sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA=="
@@ -5994,6 +6015,11 @@
     "immutable" "^4.0.0"
     "source-map-js" ">=0.6.2 <2.0.0"
 
+"sax@^1.2.4":
+  "integrity" "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw=="
+  "resolved" "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
+  "version" "1.2.4"
+
 "saxes@^5.0.1":
   "integrity" "sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw=="
   "resolved" "https://registry.npmjs.org/saxes/-/saxes-5.0.1.tgz"
@@ -6098,6 +6124,16 @@
   "version" "0.2.2"
   dependencies:
     "is-arrayish" "^0.3.1"
+
+"sitemap@^7.1.1":
+  "integrity" "sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg=="
+  "resolved" "https://registry.npmjs.org/sitemap/-/sitemap-7.1.1.tgz"
+  "version" "7.1.1"
+  dependencies:
+    "@types/node" "^17.0.5"
+    "@types/sax" "^1.2.1"
+    "arg" "^5.0.0"
+    "sax" "^1.2.4"
 
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
@@ -7040,7 +7076,7 @@
   "resolved" "https://registry.npmjs.org/vue-zoom-img/-/vue-zoom-img-1.0.2.tgz"
   "version" "1.0.2"
 
-"vue@^3.2.33":
+"vue@^3.2.33", "vue@^3.2.36":
   "integrity" "sha512-5yTXmrE6gW8IQgttzHW5bfBiFA6mx35ZXHjGLDmKYzW6MMmYvCwuKybANRepwkMYeXw2v1buGg3/lPICY5YlZw=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.36.tgz"
   "version" "3.2.36"
@@ -7057,6 +7093,33 @@
   "version" "2.24.3"
   dependencies:
     "sortablejs" "1.10.2"
+
+"vuepress-plugin-sitemap2@^2.0.0-beta.71":
+  "integrity" "sha512-H7YospnEUzAU8tzhIMAJi8zu2D3nk99Bcum9oxpLKFGce6OLH73XSONMwh+Rxkb2XKkghPvQY4F0mkIbwDncdA=="
+  "resolved" "https://registry.npmjs.org/vuepress-plugin-sitemap2/-/vuepress-plugin-sitemap2-2.0.0-beta.71.tgz"
+  "version" "2.0.0-beta.71"
+  dependencies:
+    "@vuepress/shared" "2.0.0-beta.45"
+    "@vuepress/utils" "2.0.0-beta.45"
+    "sitemap" "^7.1.1"
+    "vuepress-shared" "2.0.0-beta.71"
+
+"vuepress-shared@2.0.0-beta.71":
+  "integrity" "sha512-QxJtQjP7vY+aO+bY7xMUjZgTJRgCQc480Z7rfI+2YhwXH9JH896QrdmTwelUHnfJOmw+l79b1cWSVOsdaLFi5w=="
+  "resolved" "https://registry.npmjs.org/vuepress-shared/-/vuepress-shared-2.0.0-beta.71.tgz"
+  "version" "2.0.0-beta.71"
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.45"
+    "@vuepress/plugin-git" "2.0.0-beta.45"
+    "@vuepress/plugin-theme-data" "2.0.0-beta.45"
+    "@vuepress/shared" "2.0.0-beta.45"
+    "@vuepress/utils" "2.0.0-beta.45"
+    "chalk" "^4.1.2"
+    "dayjs" "^1.11.2"
+    "execa" "^5.1.1"
+    "ora" "^5.4.1"
+    "vue" "^3.2.36"
+    "vue-router" "^4.0.15"
 
 "vuepress-vite@2.0.0-beta.45":
   "integrity" "sha512-1yARk4FLwaQIAqp3trRb4rhAT5blkBfVUaNtTiYwC3/TwUyFWhBBaIP8sugxUMXhAalvkpMEHFxaLm4BkLfWhw=="

@@ -2,6 +2,10 @@ import { defineUserConfig, SiteData, defaultTheme, viteBundler } from 'vuepress'
 import { path } from '@vuepress/utils'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { sidebar, navbar } from './configs'
+import { sitemapPlugin } from "vuepress-plugin-sitemap2"
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 
 const getBaseUrl = (): SiteData['base'] => {
   return process.env.NODE_ENV === 'production' ? `/vuepress-test/` : '/'
@@ -98,7 +102,14 @@ export default defineUserConfig({
   ],
 
   // theme and its config
-  theme: defaultTheme(),
+  theme: defaultTheme({
+    logo: '/img/logo.svg',
+    repo: 'LouisMazel/maz-ui',
+    docsDir: 'packages/docs/docs',
+    docsBranch: 'master',
+    navbar,
+    sidebar,
+  }),
 
   bundler: viteBundler({
     // viteOptions: {
@@ -109,8 +120,18 @@ export default defineUserConfig({
     // },
   }),
   plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-EM35TM23ZC',
+    }),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
+    }),
+    sitemapPlugin({
+      hostname: 'https://louismazel.github.io/maz-ui-3/',
+      changefreq: 'daily'
+    }),
+    mediumZoomPlugin({
+      selector: 'img.zoom-custom-imgs'
     }),
     searchPlugin({
       locales: {
